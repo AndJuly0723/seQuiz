@@ -21,7 +21,7 @@ class Timer {
       if (this.timeRemaining <= 0) {
         clearInterval(this.timerInterval);
         this.isRunning = false;
-        this.timeLimit = 0;
+        this.timeRemaining = this.timeLimit; // 타이머 종료 후 시간 초기화
         console.log("시간 종료~!!");
         callback(); // 시간끝나면 콜백함수 실행 (다음문제로 넘어감)
       }
