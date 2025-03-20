@@ -8,14 +8,14 @@
 // ★ assignNFT() → NFT 등급 배정
 
 const QuestionBank = require("./QuestionBank"); // 문제 관리 클래스
-const TTimer = require("./Timer"); // 타이머 클래스
+const Timer = require("./Timer"); // 타이머 클래스
 const ScoreManager = require("./ScoreManager"); // 점수 계산 클래스
 const NftReward = require("./NftReward"); // NFT 보상 클래스
 
 class QuizManager {
     constructor(csvPath) {
         this.questionBank = new QuestionBank(csvPath); // 문제 관리 인스턴스
-        this.timer = new TTimer(); // 타이머 인스턴스
+        this.timer = new Timer(); // 타이머 인스턴스
         this.scoreManager = new ScoreManager(); // 점수 계산 인스턴스
         this.nftReward = new NftReward(); // NFT 보상 인스턴스
         this.questions = this.questionBank.getRandomQuestions(); // 랜덤 문제 가져오기
