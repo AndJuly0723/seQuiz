@@ -38,3 +38,5 @@ class Timer {
     return this.timeRemaining;
   }
 }
+
+module.exports = Timer;
