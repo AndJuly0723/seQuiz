@@ -80,7 +80,7 @@ class QuizManager {
         console.log(`🎉 퀴즈 종료! 최종 점수: ${this.getFinalScore()} 점`);
         
         const nftRank = this.nftReward.getReward(this.getFinalScore()); // NFT 등급 배정
-        console.log(`🏆 NFT 보상 등급: ${nftRank}`);
+        console.log(`🏆 NFT 등급: ${nftRank}`);
 
         process.exit(); // 프로그램 종료
     }
