@@ -1,5 +1,6 @@
 // QuizManager 메서드
 
+
 // ★ startQuiz() → 퀴즈 시작
 // ★ askQuestion() → 문제 출력
 // ★ submitAnswer(answer) → 사용자의 답변 받기

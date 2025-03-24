@@ -3,7 +3,7 @@ class Timer {
     this.timeLimit = timeLimit; // 시간제한 5초
     this.timeRemaining = timeLimit; // 남은 시간
     this.timerInterval = null; // setInterval을 저장할 변수
-    this.isRunning = false; // 타이머가 실행중인지 여부
+    this.isRunning = false; // 타이머가 실행중인지 여부, default 값 꺼짐으로 설정
   }
 
   startTimer(callback) {
